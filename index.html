@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Conheça nossos serviços!" />
+    <link rel="stylesheet" href="src/css/variables.css" />
+    <link rel="stylesheet" href="src/css/reset.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo-and-title">
+        <img class="logo" src="src/images/logo.png" alt="Logo" />
+        <h1 class="title">Biju Buffets</h1>
+      </div>
+      <nav>
+        <ul class="nav-links header-links">
+          <li><a href="#services">Serviços</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#orcament">Orçamento</a></li>
+          <li><a href="#contact">Contato</a></li>
+          <li><a href="#gallery">Galeria</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero"></section>
+    <main class="main">
+      <h2>Nossos serviços</h2>
+      <section class="services" id="services">
+        <p class="text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo
+          repellat doloribus dignissimos similique non est, enim tempora sed
+          eveniet dolor, debitis porro vero corrupti odit natus eius eos,
+          reiciendis repudiandae.
+        </p>
+        <img
+          class="about-img"
+          src="src/images/about-img-1.jpg"
+          alt="Imagem de buffet"
+        />
+      </section>
+      <h2>Sobre a Biju</h2>
+      <section class="about" id="about">
+        <img
+          class="about-img"
+          src="src/images/about-img-2.jpg"
+          alt="Imagem de buffet"
+        />
+        <p class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+          voluptates necessitatibus itaque harum doloremque labore minima
+          deserunt alias libero! Minima harum eaque quod fugit? Culpa placeat
+          laboriosam pariatur quas provident!
+        </p>
+      </section>
+      <h2>Galeria</h2>
+      <section class="gallery" id="gallery">
+        <img src="src/images/gallery-pic-1.jpg" alt="" />
+        <img src="src/images/gallery-pic-2.jpg" alt="" />
+        <img src="src/images/gallery-pic-3.jpg" alt="" />
+        <img src="src/images/gallery-pic-4.jpg" alt="" />
+      </section>
+      <h2>Solicite um orçamento gratuito</h2>
+      <h3 class="orcament-title">Nos conte um pouco sobre o seu evento!</h3>
+      <section class="orcament" id="orcament">
+        <div class="event-type">
+          <label for="event">Qual é a ocasião?</label>
+          <select class="event-type-input" name="event-type" id="event">
+            <option value="" selected>Selecione uma opção</option>
+            <option value="Casamento">Casamento</option>
+            <option value="Aniversário">Aniversário</option>
+            <option value="Festa temática">Festa temática</option>
+            <option value="Outro">Outro</option>
+          </select>
+        </div>
+        <div class="drinks">
+          <label>Deseja incluir bebidas?</label>
+          <input type="radio" id="yes-drink" name="drink-input" checked />
+          <label for="yes-drink">Sim</label>
+          <input type="radio" id="no-drink" name="drink-input" />
+          <label for="no-drink">Não</label>
+        </div>
+        <div class="vegan">
+          <label>Deseja incluir opções veganas?</label>
+          <input type="radio" id="no-vegan" name="vegan-input" checked />
+          <label for="no-vegan">Não</label>
+          <input type="radio" id="yes-vegan" name="vegan-input" />
+          <label for="yes-vegan">Sim, algumas</label>
+          <input type="radio" id="totally-vegan" name="vegan-input" />
+          <label for="totally-vegan">Sim, totalmente vegano</label>
+        </div>
+        <div class="email">
+          <p>Por último, digite seu e-mail para receber o orçamento:</p>
+          <input
+            class="email-input"
+            type="text"
+            placeholder="Digite seu e-mail"
+          />
+        </div>
+        <div class="send-btn">
+          <button class="send-btn-input">Solicitar orçamento</button>
+        </div>
+      </section>
+    </main>
+    <footer id="contact">
+      <ul class="nav-links footer-links">
+        <li>
+          <i class="fa-solid fa-square-phone"></i> <a href="#">Telefone</a>
+        </li>
+        <li><i class="fa-solid fa-envelope"></i> <a href="#">E-mail</a></li>
+        <li>
+          <i class="fa-brands fa-instagram"></i> <a href="#">Instagram</a>
+        </li>
+        <li>
+          <i class="fa-brands fa-square-facebook"></i> <a href="#">Facebook</a>
+        </li>
+      </ul>
+      <p>
+        Fotos por <a href="https://unsplash.com/" target="_blank">Unsplash</a> e
+        ícone por
+        <a
+          href="https://www.flaticon.com/free-icon/restaurant_1996055#"
+          target="_blank"
+          >monkik</a
+        >
+        no Flaticon
+      </p>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/8efa75eb49.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
