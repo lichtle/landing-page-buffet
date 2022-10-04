@@ -1,0 +1,67 @@
+/* MENU HAMBÚRGUER EM TELAS GRANDES */
+
+/* Mostra os links do menu horizontalmente */
+#hamitems {
+  display: flex;
+}
+
+/* Esconde o ícone do menu hambúrguer e o input checkbox */
+#hamnav label,
+#hamburger {
+  display: none;
+}
+
+/* MENU HAMBÚRGUER EM TELAS PEQUENAS (RESPONSIVO) */
+
+@media (max-width: 576px) {
+  /* Para centralizar o menu é necessário que o header tenha position relative */
+  .header {
+    position: relative;
+  }
+
+  /* Configurando a posição e estilização do menu aberto */
+  #hamitems {
+    position: absolute;
+    margin-left: 0 auto;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    top: 9.9rem;
+    background-color: var(--main-color);
+  }
+
+  #hamitems a {
+    font-size: 1.8rem;
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  /* Mostra o ícone do menu hambúrguer em telas menores que 576px */
+  #hamnav label {
+    display: inline-block;
+    color: var(--hyperlink-color, white);
+    font-style: normal;
+    font-size: 3rem;
+    padding: 10px;
+  }
+
+  /* Mostra os itens do menu somente quando o input checkbox for selecionado */
+  #hamitems {
+    display: none;
+  }
+
+  #hamnav input:checked ~ #hamitems {
+    display: block;
+  }
+}
+
+/* 360px breakpoint*/
+
+@media (max-width: 395px) {
+  #hamitems {
+    padding: 3rem 0 1rem 0;
+    top: 9.9rem;
+    background-color: var(--main-color);
+  }
+}

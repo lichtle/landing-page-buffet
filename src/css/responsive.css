@@ -86,3 +86,9 @@ footer ul.nav-links {
   flex-direction: column;
   gap: 2rem;
 }
+
+@media (max-width: 395px) {
+  .logo-and-title {
+    width: 25rem;
+  }
+}
