@@ -10,7 +10,7 @@ Projeto pessoal que fiz inspirado na minha paixão por Gastronomia! :heart:
 
 ### Mobile
 
-<img src="mobile-screenshot.jpg" alt="Screenshot do projeto mobile" height="400"/>
+<img src="mobile-screenshot.jpeg" alt="Screenshot do projeto mobile" height="400"/>
 
 ## Tecnologias utilizadas
 
