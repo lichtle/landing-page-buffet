@@ -1,4 +1,4 @@
-# Projeto Landing Page de Restaurante
+# Landing Page de Buffet
 
 Projeto pessoal que fiz inspirado na minha paixão por Gastronomia! :heart:
 
