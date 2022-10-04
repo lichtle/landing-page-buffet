@@ -33,11 +33,12 @@ body {
   color: #f8f8f8;
   font-weight: 400;
   letter-spacing: 0.5rem;
+  width: 25rem;
 }
 
 .nav-links {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -45,11 +46,13 @@ body {
   margin: 0 1rem;
 }
 
-.header-links li a {
+#hamitems a {
+  flex-grow: 1;
+  flex-basis: 0;
   padding: 1rem 1.5rem;
+  text-align: center;
   background-color: #520005;
   border-radius: 2.5rem;
-  color: #fff;
   letter-spacing: 0.1rem;
 }
 
@@ -111,6 +114,10 @@ body {
   height: 40vh;
 }
 
+h2:nth-last-of-type(1) {
+  margin-bottom: 0; /* Zera a margem do último h2 (orçamento) */
+}
+
 .orcament-title {
   text-align: center;
   font-weight: 500;
@@ -123,7 +130,9 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  height: 55vh;
+  font-size: 1.8rem;
+  min-height: 75vh;
+text-align: center;
 }
 
 .event-type,
@@ -139,7 +148,7 @@ body {
 .event-type-input,
 .email-input {
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   width: 23rem;
   padding: 1rem;
   border: 2px solid black;
@@ -147,9 +156,9 @@ body {
 }
 
 .send-btn-input {
-  font-size: 1.4rem;
-  width: 16rem;
-  padding: 0.5rem;
+  font-size: 1.6rem;
+  width: 20rem;
+  padding: 1rem 2rem;
 }
 
 footer {
@@ -157,23 +166,19 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  letter-spacing: 0.1rem;
   padding: 2rem;
+  letter-spacing: 0.1rem;
+  color: #fff;
   background-color: #a03a18;
-  font-size: 1.8rem;
 }
 
-footer ul {
+footer ul.nav-links {
+  font-size: 1.8rem;
   margin-bottom: 2rem;
 }
 
-footer,
-footer a {
-  color: #fff;
-}
-
 footer p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 300;
 }
 
@@ -182,4 +187,60 @@ footer p {
     opacity: 80%;
     transition: 0.4s ease-in-out;
   }
-} ;
+}
+
+/* Menu Hambúrguer */
+
+/* Mostra os links do menu horizontalmente em telas grandes */
+#hamitems {
+  display: flex;
+}
+
+/* Esconde o menu hambúrguer em telas grandes */
+#hamnav label,
+#hamburger {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  /* Para centralizar o menu é necessário que o header tenha position relative */
+  .header {
+    position: relative;
+  }
+
+  /* Configurando a posição e estilização do menu aberto */
+  #hamitems {
+    position: absolute;
+    margin-left: 0 auto;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    top: 9.9rem;
+    background-color: #a03a18;
+  }
+
+  #hamitems a {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+  }
+
+  /* Mostra o ícone do menu hambúrguer em telas menores que 576px */
+  #hamnav label {
+    display: inline-block;
+    color: white;
+    font-style: normal;
+    font-size: 3rem;
+    padding: 10px;
+  }
+
+  /* Mostra os itens do menu somente quando o input checkbox for selecionado */
+  #hamitems {
+    display: none;
+  }
+
+  #hamnav input:checked ~ #hamitems {
+    display: block;
+  }
+}

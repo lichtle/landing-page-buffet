@@ -1,0 +1,88 @@
+@media (max-width: 576px) {
+  .header {
+    justify-content: center;
+  }
+
+  .hero {
+    height: 60vh;
+  }
+
+  .services,
+  .about {
+    flex-direction: column;
+    padding: 3rem;
+  }
+
+  .text {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+
+  .text:nth-child(1) {
+    margin-bottom: 3rem;
+  }
+
+  .text:nth-child(2) {
+    margin-top: 3rem;
+  }
+
+  .services-img,
+  .about-img {
+    width: 30rem;
+    height: 40vh;
+    margin: 0;
+  }
+
+  .gallery {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .gallery img {
+    width: 100%;
+    height: 30vh;
+  }
+
+  .orcament-title {
+    font-size: 2.4rem;
+  }
+
+  .orcament {
+    text-align: center;
+    gap: 4rem;
+    font-size: 2rem;
+    padding: 4rem;
+  }
+
+  .event-type-input,
+  .email-input {
+    font-size: 1.8rem;
+  }
+
+  .event-type,
+  .email,
+  .send-btn {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .send-btn-input {
+    font-size: 1.8rem;
+    width: 20rem;
+    padding: 1rem;
+  }
+}
+
+footer {
+  text-align: center;
+}
+
+footer ul.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}

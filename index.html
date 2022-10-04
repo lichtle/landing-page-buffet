@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="src/css/variables.css" />
     <link rel="stylesheet" href="src/css/reset.css" />
     <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/responsive.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,8 +23,10 @@
         <img class="logo" src="src/images/logo.png" alt="Logo" />
         <h1 class="title">Biju Buffets</h1>
       </div>
-      <nav>
-        <ul class="nav-links header-links">
+      <nav id="hamnav">
+        <label for="hamburger">&#9776;</label>
+        <input type="checkbox" id="hamburger" />
+        <ul id="hamitems" class="nav-links">
           <li><a href="#services">Serviços</a></li>
           <li><a href="#about">Sobre</a></li>
           <li><a href="#orcament">Orçamento</a></li>
@@ -70,8 +73,8 @@
         <img src="src/images/gallery-pic-4.jpg" alt="" />
       </section>
       <h2>Solicite um orçamento gratuito</h2>
-      <h3 class="orcament-title">Nos conte um pouco sobre o seu evento!</h3>
       <section class="orcament" id="orcament">
+        <h3 class="orcament-title">Nos conte um pouco sobre o seu evento!</h3>
         <div class="event-type">
           <label for="event">Qual é a ocasião?</label>
           <select class="event-type-input" name="event-type" id="event">
@@ -89,8 +92,8 @@
           <input type="radio" id="no-drink" name="drink-input" />
           <label for="no-drink">Não</label>
         </div>
+        <label>Deseja incluir opções veganas?</label>
         <div class="vegan">
-          <label>Deseja incluir opções veganas?</label>
           <input type="radio" id="no-vegan" name="vegan-input" checked />
           <label for="no-vegan">Não</label>
           <input type="radio" id="yes-vegan" name="vegan-input" />
@@ -112,7 +115,7 @@
       </section>
     </main>
     <footer id="contact">
-      <ul class="nav-links footer-links">
+      <ul class="nav-links">
         <li>
           <i class="fa-solid fa-square-phone"></i> <a href="#">Telefone</a>
         </li>
@@ -126,7 +129,7 @@
       </ul>
       <p>
         Fotos por <a href="https://unsplash.com/" target="_blank">Unsplash</a> e
-        ícone por
+        logo por
         <a
           href="https://www.flaticon.com/free-icon/restaurant_1996055#"
           target="_blank"
